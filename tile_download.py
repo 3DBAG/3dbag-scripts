@@ -25,7 +25,7 @@ Download tiles within a bbox in obj formats in the current directory:
 """
 
 def get_tile_index(bbox: tuple = None):
-    tile_index = fgb.HTTPReader('https://data.3dbag.nl/v20240420/tile_index.fgb', bbox=bbox)    
+    tile_index = fgb.HTTPReader('https://data.3dbag.nl/latest/tile_index.fgb', bbox=bbox)    
     return tile_index
 
 def download_obj(tile_id, tilesdir: Path) -> None:
